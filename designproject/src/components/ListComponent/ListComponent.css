@@ -1,0 +1,47 @@
+.list-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 4px 6px 4px;
+    background-color: #fff;
+    width: 232px;
+  }
+  
+  .icon-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+  }
+  
+  .left {
+    margin-right: auto;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: 'Gilroy', sans-serif;
+  }
+  
+  .right {
+    margin-left: auto;
+  }
+  
+  .add-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
