@@ -1,0 +1,25 @@
+.footer {
+    padding: 20px 0 20px 0;
+    background-color: #fff;
+    width: 800px;
+    height: 22px;
+    border-color: #E3E3E4;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+  }
+ 
+  .footer-links a {
+    text-decoration: none;
+    color: #595964;
+    font-family: var(--font-medium);
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
