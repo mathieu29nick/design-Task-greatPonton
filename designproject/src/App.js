@@ -1,45 +1,97 @@
-import './App.css';
-import CardComponent from './components/CardComponent/CardComponent';
-import FooterComponent from './components/FooterComponent/FooterComponent';
-import ListComponent from './components/ListComponent/ListComponent';
-import PersonalInformationFormComponent from './components/PersonalInformationFormComponent/PersonalInformationFormComponent';
-import PremiumAccount from './components/PremiumAccount/PremiumAccount';
-import SimpleCardComponent from './components/SimpleCardComponent/SimpleCardComponent'
+import "./App.css";
+import CardComponent from "./components/CardComponent/CardComponent";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
+import PersonalInformationFormComponent from "./components/PersonalInformationFormComponent/PersonalInformationFormComponent";
+import PremiumAccount from "./components/PremiumAccount/PremiumAccount";
+import SimpleCardComponent from "./components/SimpleCardComponent/SimpleCardComponent";
 
 function App() {
   return (
     <div className="main">
-      <div className="menu">
+      <aside className="menu">
         <div className="menu1">
-          <img src={process.env.PUBLIC_URL + "/img/resume.png"} alt="" className=""/>
+          <img
+            src={process.env.PUBLIC_URL + "/img/resume.png"}
+            alt=""
+            className=""
+          />
         </div>
         <div className="menu2">
-          <CardComponent  icon = {"liste.png"} libelle={"My boards"} boards ={[]}></CardComponent>
-          <CardComponent  icon = {"search.png"} libelle={"Search"} boards ={listMenu2}></CardComponent>
-          <CardComponent  icon = {"board.png"} libelle={"My boards"} boards ={listMenu1} rightIcon = {"add.png"}></CardComponent>
+          <CardComponent
+            className="card-component"
+            icon={"liste.png"}
+            libelle={"My boards"}
+            boards={[]}
+          />
+          <CardComponent
+            icon={"search.png"}
+            libelle={"Search"}
+            boards={listMenu2}
+          />
+          <CardComponent
+            icon={"board.png"}
+            libelle={"My boards"}
+            boards={listMenu1}
+            rightIcon={"add.png"}
+          />
         </div>
         <div className="menu3">
-          <CardComponent  icon = {"img.png"} libelle={"Carla"} boards ={[]} rightIcon={"settings.png"}></CardComponent>
+          <div className="card-header-account">
+            <div className="card-account-icon-title">
+              <img
+                src={process.env.PUBLIC_URL + "/img/img.png"}
+                height={32}
+                width={32}
+                alt=""
+                className="card-icon"
+              />
+              <span className="card-title">Carla</span>
+            </div>
+            <button className="card-add-button">
+              <img
+                src={process.env.PUBLIC_URL + "/img/settings.png"}
+                alt=""
+                className="card-icon"
+              />
+            </button>
+          </div>
         </div>
-      </div>
+      </aside>
       <div className="content">
-        <PremiumAccount title={"Premium Account"} description={"You have a premium account, granting you access to all the remarkable features offered by ResumeDone. With this privilege, you can indulge in the freedom of downloading an unlimited number of resumes and cover letters in both PDF and Word formats."}></PremiumAccount>
-        <PersonalInformationFormComponent></PersonalInformationFormComponent>
+        <PremiumAccount
+          title={"Premium Account"}
+          description={
+            "You have a premium account, granting you access to all the remarkable features offered by ResumeDone. With this privilege, you can indulge in the freedom of downloading an unlimited number of resumes and cover letters in both PDF and Word formats."
+          }
+        />
+        <PersonalInformationFormComponent />
         <div className="text">
-          <p className="personal-information__text">
-            <input type='checkbox' className="checkbox"></input>
-            Show my profile to serious employers on <span className="personal-information__text__link">hirethesbest.io</span> for free</p>
+          <div className="checkbox-text">
+            <input type="checkbox" className="checkbox"></input>
+            <p>Show my profile to serious employers on <span className="personal-information__text__link">
+               hirethesbest.io 
+            </span> for free</p>
+          </div>
         </div>
-        <SimpleCardComponent title={"Delete account"} description={"If you delete your account you’ll be permanently removing it from our systems - you can’t undo it."} link={"Yes, Delete my account"}></SimpleCardComponent>
+        <SimpleCardComponent
+          title={"Delete account"}
+          description={
+            "If you delete your account you’ll be permanently removing it from our systems - you can’t undo it."
+          }
+          link={"Yes, Delete my account"}
+        />
         <div className="text">
           <p className="personal-information__text">
-            <span className="personal-information__text__link">Get in touch with our support team</span> if you have any question or want to leave some feedback.
+            <span className="personal-information__text__link">
+              Get in touch with our support team
+            </span>{" "}
+            if you have any question or want to leave some feedback.
           </p>
           <p className="personal-information__text">
             We’ll be happy to hear from you.
           </p>
         </div>
-        <FooterComponent tab={listFooter}></FooterComponent>
+        <FooterComponent tab={listFooter} />
       </div>
     </div>
   );
@@ -51,7 +103,7 @@ const listMenu1 = [
   { leftLogo: "folder.png", libelle: "Board 3" },
   { leftLogo: "key.png", libelle: "Board agent 1" },
   { leftLogo: "key.png", libelle: "Board agent 2" },
-  { leftLogo: "key.png", libelle: "Board agent 3" }
+  { leftLogo: "key.png", libelle: "Board agent 3" },
 ];
 
 const listMenu2 = [
@@ -75,7 +127,7 @@ const listFooter = [
   { libelle: "Terms & Conditions" },
   { libelle: "Privacy Policy" },
   { libelle: "FAQ" },
-  { libelle: "Contact Us" }
+  { libelle: "Contact Us" },
 ];
 
 export default App;

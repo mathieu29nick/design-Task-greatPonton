@@ -1,11 +1,11 @@
 .footer {
-    padding: 20px 0 20px 0;
-    background-color: #fff;
-    width: 830px;
-    height: 22px;
-    margin: 32px 80px;
-    border-color: #E3E3E4;
-    border-top: 1px solid #ddd;
+  padding: 17px 0 17px 0;
+  background-color: #fff;
+  width: 830px;
+  height: 22px;
+  margin: 0px 80px 0px 80px;
+  border-color: #E3E3E4;
+  border-top: 1px solid #E3E3E4;
   }
   
   .footer-links {

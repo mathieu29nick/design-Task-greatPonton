@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 1051px;
+  height: 1050px;
 }
 
 /*.menu {
@@ -13,20 +13,22 @@
 .menu {
   width: 240px;
   border-right: 1px solid #E3E3E4;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .menu1 {
-  padding: 0;
   margin: 0;
   border-bottom: 1px solid #E3E3E4;
+  padding: 12px 8px 12px 8px;
 }
 
 .menu2 {
   align-self: center;
+  padding: 8px 4px 8px 4px;
+  height: 939px;
 }
 
 .menu3 {
@@ -35,16 +37,43 @@
 
 .content {
   flex: 1;
-  padding: 20px;
   width: 960px;
   background-color: #fff;
 }
 
 .text{
-  margin: 32px 80px;
+  margin: 32px 80px 17px 80px;
 }
 
-.checkbox{
-  margin-right: 10px;
-  border: 1px solid #C4C4C7;
+.checkbox {
+    margin-right: 8px;
+    border: 2px solid #C4C4C7;
 }
+
+.card-component{
+  padding: 6px 4px 6px 4px;
+}
+
+.card-header-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.card-account-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-text{
+  font-size: 15px;
+  font-family: var(--font-medium);
+  line-height: 22px;
+  margin: 0;
+  display: flex;
+  color: #4C4C55;
+}
+
+

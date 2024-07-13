@@ -72,7 +72,7 @@ const PersonalInformationFormComponent = () => {
               placeholder="Password"
             />
           </div>
-          <p className="personal-information__text">Use this email to log in to your <span className="personal-information__text__link">resumedone.io</span> account and receive notifications.</p>
+          <p className="personal-information__text">Use this email to log in to your <span className="personal-information__text__link"> resumedone.io </span> account and receive notifications.</p>
           <button type="submit">Save</button>
         </form>
         <div className="profile-image-container">
